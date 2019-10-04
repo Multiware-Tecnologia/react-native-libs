@@ -1,0 +1,28 @@
+{
+  "name": "escpos-printer-toolkit",
+  "version": "1.0.8",
+  "description": "点单宝打印机指令定义",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/wanxsb/escpos-printer-toolkit.git"
+  },
+  "keywords": [
+    "printer",
+    "esc/pos"
+  ],
+  "author": "shenzhen candongli corp.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wanxsb/escpos-printer-toolkit/issues"
+  },
+  "homepage": "https://github.com/wanxsb/escpos-printer-toolkit#readme",
+  "dependencies": {
+    "buffer": "^5.4.2 ",
+    "iconv-lite": "^0.5.0",
+    "pngjs": "3.3.3"
+  }
+}
