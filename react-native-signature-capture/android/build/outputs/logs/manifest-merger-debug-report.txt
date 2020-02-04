@@ -1,0 +1,37 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/mauromoura/Mauro/Projetos/TopSappMobile/node_modules/react-native-signature-capture/android/src/main/AndroidManifest.xml:1:1-3:12
+INJECTED from /Users/mauromoura/Mauro/Projetos/TopSappMobile/node_modules/react-native-signature-capture/android/src/main/AndroidManifest.xml:1:1-3:12
+INJECTED from /Users/mauromoura/Mauro/Projetos/TopSappMobile/node_modules/react-native-signature-capture/android/src/main/AndroidManifest.xml:1:1-3:12
+INJECTED from /Users/mauromoura/Mauro/Projetos/TopSappMobile/node_modules/react-native-signature-capture/android/src/main/AndroidManifest.xml:1:1-3:12
+INJECTED from /Users/mauromoura/Mauro/Projetos/TopSappMobile/node_modules/react-native-signature-capture/android/src/main/AndroidManifest.xml:1:1-3:12
+INJECTED from /Users/mauromoura/Mauro/Projetos/TopSappMobile/node_modules/react-native-signature-capture/android/src/main/AndroidManifest.xml:1:1-3:12
+INJECTED from /Users/mauromoura/Mauro/Projetos/TopSappMobile/node_modules/react-native-signature-capture/android/src/main/AndroidManifest.xml:1:1-3:12
+	package
+		ADDED from /Users/mauromoura/Mauro/Projetos/TopSappMobile/node_modules/react-native-signature-capture/android/src/main/AndroidManifest.xml:2:5-37
+		INJECTED from /Users/mauromoura/Mauro/Projetos/TopSappMobile/node_modules/react-native-signature-capture/android/src/main/AndroidManifest.xml
+		INJECTED from /Users/mauromoura/Mauro/Projetos/TopSappMobile/node_modules/react-native-signature-capture/android/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/mauromoura/Mauro/Projetos/TopSappMobile/node_modules/react-native-signature-capture/android/src/main/AndroidManifest.xml
+		ADDED from /Users/mauromoura/Mauro/Projetos/TopSappMobile/node_modules/react-native-signature-capture/android/src/main/AndroidManifest.xml:1:1-3:12
+		INJECTED from /Users/mauromoura/Mauro/Projetos/TopSappMobile/node_modules/react-native-signature-capture/android/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/mauromoura/Mauro/Projetos/TopSappMobile/node_modules/react-native-signature-capture/android/src/main/AndroidManifest.xml
+		ADDED from /Users/mauromoura/Mauro/Projetos/TopSappMobile/node_modules/react-native-signature-capture/android/src/main/AndroidManifest.xml:1:1-3:12
+		INJECTED from /Users/mauromoura/Mauro/Projetos/TopSappMobile/node_modules/react-native-signature-capture/android/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/mauromoura/Mauro/Projetos/TopSappMobile/node_modules/react-native-signature-capture/android/src/main/AndroidManifest.xml:1:11-69
+uses-sdk
+INJECTED from /Users/mauromoura/Mauro/Projetos/TopSappMobile/node_modules/react-native-signature-capture/android/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/mauromoura/Mauro/Projetos/TopSappMobile/node_modules/react-native-signature-capture/android/src/main/AndroidManifest.xml
+INJECTED from /Users/mauromoura/Mauro/Projetos/TopSappMobile/node_modules/react-native-signature-capture/android/src/main/AndroidManifest.xml
+INJECTED from /Users/mauromoura/Mauro/Projetos/TopSappMobile/node_modules/react-native-signature-capture/android/src/main/AndroidManifest.xml
+INJECTED from /Users/mauromoura/Mauro/Projetos/TopSappMobile/node_modules/react-native-signature-capture/android/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/mauromoura/Mauro/Projetos/TopSappMobile/node_modules/react-native-signature-capture/android/src/main/AndroidManifest.xml
+		ADDED from /Users/mauromoura/Mauro/Projetos/TopSappMobile/node_modules/react-native-signature-capture/android/src/main/AndroidManifest.xml
+		INJECTED from /Users/mauromoura/Mauro/Projetos/TopSappMobile/node_modules/react-native-signature-capture/android/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/mauromoura/Mauro/Projetos/TopSappMobile/node_modules/react-native-signature-capture/android/src/main/AndroidManifest.xml
+		ADDED from /Users/mauromoura/Mauro/Projetos/TopSappMobile/node_modules/react-native-signature-capture/android/src/main/AndroidManifest.xml
+		INJECTED from /Users/mauromoura/Mauro/Projetos/TopSappMobile/node_modules/react-native-signature-capture/android/src/main/AndroidManifest.xml
