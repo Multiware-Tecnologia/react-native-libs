@@ -1,5 +1,5 @@
 {
-  "_from": "git+https://github.com/mauromouratopsapp/react-native-juno.git",
+  "_from": "git+https://github.com/Multiware-Tecnologia/react-native-libs/tree/master/react-native-juno",
   "_id": "react-native-juno@1.0.0",
   "_inBundle": false,
   "_integrity": "",
@@ -9,25 +9,25 @@
   },
   "_requested": {
     "type": "git",
-    "raw": "react-native-juno@git+https://github.com/mauromouratopsapp/react-native-juno.git",
+    "raw": "react-native-juno@git+https://github.com/Multiware-Tecnologia/react-native-libs/tree/master/react-native-juno",
     "name": "react-native-juno",
     "escapedName": "react-native-juno",
-    "rawSpec": "git+https://github.com/mauromouratopsapp/react-native-juno.git",
-    "saveSpec": "git+https://github.com/mauromouratopsapp/react-native-juno.git",
-    "fetchSpec": "https://github.com/mauromouratopsapp/react-native-juno.git",
+    "rawSpec": "git+https://github.com/Multiware-Tecnologia/react-native-libs/tree/master/react-native-juno",
+    "saveSpec": "git+https://github.com/Multiware-Tecnologia/react-native-libs/tree/master/react-native-juno",
+    "fetchSpec": "git+https://github.com/Multiware-Tecnologia/react-native-libs/tree/master/react-native-juno",
     "gitCommittish": null
   },
   "_requiredBy": [
     "/"
   ],
-  "_resolved": "git+https://github.com/mauromouratopsapp/react-native-juno.git#479bcc8882df90355f7091653d9bc63b3912e4bf",
-  "_spec": "react-native-juno@git+https://github.com/mauromouratopsapp/react-native-juno.git",
+  "_resolved": "git+https://github.com/Multiware-Tecnologia/react-native-libs/tree/master/react-native-juno",
+  "_spec": "react-native-juno@git+https://github.com/Multiware-Tecnologia/react-native-libs/tree/master/react-native-juno",
   "_where": "/Users/mauromoura/Mauro/Projetos/APPCentralAssinante",
   "author": {
-    "name": "shenzhen candongli corp."
+    "name": "ADBRAX"
   },
   "bugs": {
-    "url": "https://github.com/mauromouratopsapp/react-native-juno/issues"
+    "url": "git+https://github.com/Multiware-Tecnologia/react-native-libs/issues"
   },
   "bundleDependencies": false,
   "dependencies": {
@@ -37,7 +37,7 @@
   },
   "deprecated": false,
   "description": "Lib do DirectCheckout do JUNO para React Native",
-  "homepage": "https://github.com/mauromouratopsapp/react-native-juno#readme",
+  "homepage": "git+https://github.com/Multiware-Tecnologia/react-native-libs/#readme",
   "keywords": [
     "printer",
     "esc/pos"
@@ -47,7 +47,7 @@
   "name": "react-native-juno",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/mauromouratopsapp/react-native-juno.git"
+    "url": "git+ssh://git@github.com/Multiware-Tecnologia/react-native-libs/tree/master/react-native-juno"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
