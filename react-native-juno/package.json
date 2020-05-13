@@ -1,0 +1,56 @@
+{
+  "_from": "git+https://github.com/mauromouratopsapp/react-native-juno.git",
+  "_id": "react-native-juno@1.0.0",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/react-native-juno",
+  "_phantomChildren": {
+    "safer-buffer": "2.1.2"
+  },
+  "_requested": {
+    "type": "git",
+    "raw": "react-native-juno@git+https://github.com/mauromouratopsapp/react-native-juno.git",
+    "name": "react-native-juno",
+    "escapedName": "react-native-juno",
+    "rawSpec": "git+https://github.com/mauromouratopsapp/react-native-juno.git",
+    "saveSpec": "git+https://github.com/mauromouratopsapp/react-native-juno.git",
+    "fetchSpec": "https://github.com/mauromouratopsapp/react-native-juno.git",
+    "gitCommittish": null
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "git+https://github.com/mauromouratopsapp/react-native-juno.git#479bcc8882df90355f7091653d9bc63b3912e4bf",
+  "_spec": "react-native-juno@git+https://github.com/mauromouratopsapp/react-native-juno.git",
+  "_where": "/Users/mauromoura/Mauro/Projetos/APPCentralAssinante",
+  "author": {
+    "name": "shenzhen candongli corp."
+  },
+  "bugs": {
+    "url": "https://github.com/mauromouratopsapp/react-native-juno/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "buffer": "^5.4.2 ",
+    "iconv-lite": "^0.5.0",
+    "pngjs": "3.3.3"
+  },
+  "deprecated": false,
+  "description": "Lib do DirectCheckout do JUNO para React Native",
+  "homepage": "https://github.com/mauromouratopsapp/react-native-juno#readme",
+  "keywords": [
+    "printer",
+    "esc/pos"
+  ],
+  "license": "ISC",
+  "main": "index.js",
+  "name": "react-native-juno",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/mauromouratopsapp/react-native-juno.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.0"
+}
