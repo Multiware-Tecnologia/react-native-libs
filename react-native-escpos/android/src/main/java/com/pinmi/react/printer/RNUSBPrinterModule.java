@@ -48,6 +48,7 @@ public class RNUSBPrinterModule extends ReactContextBaseJavaModule implements RN
     public static final int WIDTH_80 = 576;
     public static final byte[] LINE_SPACE_24   = {0x1b,0x33,24}; // Set the line spacing at 24
     public static final byte[] CUT_PAPER   = {0x1b,0x69};
+    public static final byte[] CENTER_PAPER   = {0x1B,0x61,49};
     //Image
     public static final byte[] SELECT_BIT_IMAGE_MODE = {0x1B, 0x2A, 33};
     public static final byte[] CTL_LF          = {0x0a};          // Print and line feed
@@ -97,7 +98,12 @@ public class RNUSBPrinterModule extends ReactContextBaseJavaModule implements RN
     @ReactMethod
     @Override
     public void printRawData(String base64Data, Callback errorCallback){
+        adapter.sendData(LINE_SPACE_24);
+        adapter.sendData(CENTER_PAPER);
         adapter.printRawData(base64Data, errorCallback);
+        adapter.sendData(CTL_LF);
+        adapter.sendData(CTL_LF);
+        adapter.sendData(CUT_PAPER);
     }
 
     @ReactMethod

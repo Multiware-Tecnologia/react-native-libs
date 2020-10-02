@@ -64,9 +64,11 @@ export const USBPrinter = {
     }),
 
   printText: data =>
-    RNUSBPrinter.printRawData(textTo64Buffer(data), error =>
+    RNUSBPrinter.printRawData(data, error =>
       console.warn(error)
     ),
+
+    
 
   printBill: data =>
     RNUSBPrinter.printRawData(billTo64Buffer(data), error =>
