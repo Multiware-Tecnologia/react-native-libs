@@ -103,6 +103,8 @@ public class RNUSBPrinterModule extends ReactContextBaseJavaModule implements RN
         adapter.printRawData(base64Data, errorCallback);
         adapter.sendData(CTL_LF);
         adapter.sendData(CTL_LF);
+        adapter.sendData(CTL_LF);
+        adapter.sendData(CTL_LF);
         adapter.sendData(CUT_PAPER);
     }
 
