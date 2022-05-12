@@ -5,17 +5,17 @@ A module to integrate gerencianet api sdk for android
 ## Installation
 
 ```sh
-npm install react-native-gerencianet
+npm install react-native-libs
 ```
 
 ## Usage
 
 ```js
-import { multiply } from "react-native-gerencianet";
+import { generateHash } from "react-native-gerencianet";
 
 // ...
 
-const result = await multiply(3, 7);
+const result = await generateHash(cardData);
 ```
 
 ## Contributing
