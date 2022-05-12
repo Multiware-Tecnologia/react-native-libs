@@ -1,4 +1,4 @@
-package br.com.gerencianet.mobile.exceptions;
+package com.reactnativegerencianet.exceptions;
 
 import com.google.gson.JsonObject;
 

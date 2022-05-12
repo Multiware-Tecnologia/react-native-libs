@@ -1,4 +1,4 @@
-package br.com.gerencianet.mobile.exceptions;
+package com.reactnativegerencianet.exceptions;
 
 /** This class extends to Exception and is developed to deal with authenticate errors
  * @author Filipe Mata
