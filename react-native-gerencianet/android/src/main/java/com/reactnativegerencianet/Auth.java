@@ -18,11 +18,8 @@ import com.google.gson.JsonObject;
 import com.reactnativegerencianet.exceptions.AuthorizationException;
 import com.reactnativegerencianet.exceptions.GerencianetException;
 
-import com.facebook.react.bridge.ReactMethod;
-import com.facebook.react.bridge.ReactContextBaseJavaModule;
-import com.facebook.react.bridge.ReactApplicationContext;
 
-public class Auth extends ReactContextBaseJavaModule{
+public class Auth{
     private String accessToken;
     private Date expires;
     private final Request request;
