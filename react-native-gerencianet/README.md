@@ -5,7 +5,19 @@ A module to integrate gerencianet api sdk for android
 ## Installation
 
 ```sh
-npm install react-native-libs
+run npm install react-native-libs
+```
+
+
+```sh
+Add this line to your settings.gradle file 
+include ':react-native-gerencianet'
+project(':react-native-gerencianet').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-libs/react-native-gerencianet/android')
+
+and this line to your app/build.gralde file
+implementation project(':react-native-gerencianet')
+
+remember to import the package to your MainAplication.java file
 ```
 
 ## Usage
