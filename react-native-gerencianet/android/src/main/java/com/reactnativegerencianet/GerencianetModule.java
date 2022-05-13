@@ -2,9 +2,9 @@ package com.reactnativegerencianet;
 
 import androidx.annotation.NonNull;
 
+import com.reactnativegerencianet.exceptions.GerencianetException;
 import com.reactnativegerencianet.Gerencianet;
 
-import com.facebook.react.bridge.Promise;
 import com.facebook.common.logging.FLog;
 import com.facebook.react.bridge.Arguments;
 import com.facebook.react.bridge.Callback;
@@ -13,6 +13,7 @@ import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
 import com.facebook.react.bridge.WritableMap;
+import com.facebook.react.bridge.WritableNativeMap;
 import com.facebook.react.common.ReactConstants;
 import com.facebook.react.modules.core.DeviceEventManagerModule;
 import com.facebook.react.module.annotations.ReactModule;
@@ -20,6 +21,7 @@ import com.facebook.react.module.annotations.ReactModule;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Objects;
+import java.util.stream.Collectors;
 
 @ReactModule(name = GerencianetModule.NAME)
 public class GerencianetModule extends ReactContextBaseJavaModule {
@@ -35,14 +37,15 @@ public class GerencianetModule extends ReactContextBaseJavaModule {
         return NAME;
     }
 
-
     // Example method
     // See https://reactnative.dev/docs/native-modules-android
     @ReactMethod
-    public void generateHash(String accountId, Boolean approval, Int number, String brand, Int cvv, Int expiration_month, Int expiration_year,  final Callback callback) throws GerencianetException{
-        HashMap<String, Object> options = new HashMap<String>();
+    public void generateHash(String accountId, Boolean approvalMode, String brand, String cvv,
+            String expiration_month, String expiration_year, String number, final Callback callback)
+            throws GerencianetException {
+        HashMap<String, Object> options = new HashMap<String, Object>();
         options.put("account_id", accountId);
-        options.put("sandbox", approval);
+        options.put("sandbox", approvalMode);
 
         Map<String, Object> card = new HashMap<>();
         card.put("brand", brand);
@@ -53,17 +56,26 @@ public class GerencianetModule extends ReactContextBaseJavaModule {
 
         try {
             Gerencianet gn = new Gerencianet(options);
-            Map<String, Object> response = gn.call("paymentToken", new HashMap<String,String>(), card);
-            System.out.println(response);
-            callback.invoke(response);
-        }catch (GerencianetException e){
-            System.out.println(e.getCode());
-            System.out.println(e.getError());
-            System.out.println(e.getErrorDescription());
+            Map<String, Object> response = gn.call("paymentToken", new HashMap<String, String>(), card);
+            WritableMap hash = new WritableNativeMap();
+            hash.putString("hash",convertWithStream(response));
+            callback.invoke(hash);
+        } catch (GerencianetException error) {
+            System.out.println(error.getCode());
+            System.out.println(error.getError());
+            System.out.println(error.getErrorDescription());
+            callback.invoke(error);
+        } catch (Exception error) {
+            error.printStackTrace();
+            System.out.println(error.getMessage());
+            callback.invoke(error);
         }
-        catch (Exception e) {
-            e.printStackTrace();
-            System.out.println(e.getMessage());
-        }
+    }
+
+    public String convertWithStream(Map<String, ?> map) {
+        String mapAsString = map.keySet().stream()
+          .map(key -> key + "=" + map.get(key))
+          .collect(Collectors.joining(", ", "{", "}"));
+        return mapAsString;
     }
 }
