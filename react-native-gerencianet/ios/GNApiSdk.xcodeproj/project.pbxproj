@@ -1,0 +1,758 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2A9D2CC45518E2CD452D1DDD /* libPods-GNApiSdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C59FE9B22783C1CA1F8A137 /* libPods-GNApiSdk.a */; };
+		8D952F32FC0C123011830D80 /* libPods-Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96FF839B7D3FE6731B6DB08C /* libPods-Tests.a */; };
+		FF1269851BCFC1E600A2CB02 /* RSA.m in Sources */ = {isa = PBXBuildFile; fileRef = FF1269841BCFC1E600A2CB02 /* RSA.m */; };
+		FF1D2D531AFBAE5400BBD16D /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FF1D2D521AFBAE5400BBD16D /* libicucore.dylib */; };
+		FF56FB7B1B3DE5C0000BB76D /* GNApiEndpointsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FF56FB7A1B3DE5C0000BB76D /* GNApiEndpointsTests.m */; };
+		FF62F4C61AF8DAB00060DF03 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FF62F4BC1AF8DAB00060DF03 /* AppDelegate.m */; };
+		FF62F4C71AF8DAB00060DF03 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF62F4BD1AF8DAB00060DF03 /* LaunchScreen.xib */; };
+		FF62F4C81AF8DAB00060DF03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF62F4BF1AF8DAB00060DF03 /* Main.storyboard */; };
+		FF62F4C91AF8DAB00060DF03 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF62F4C11AF8DAB00060DF03 /* Images.xcassets */; };
+		FF62F4CB1AF8DAB00060DF03 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FF62F4C31AF8DAB00060DF03 /* main.m */; };
+		FF62F4CC1AF8DAB00060DF03 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF62F4C51AF8DAB00060DF03 /* ViewController.m */; };
+		FF727A601B0E0D6300FAE890 /* GNPaymentData.m in Sources */ = {isa = PBXBuildFile; fileRef = FF727A5F1B0E0D6300FAE890 /* GNPaymentData.m */; };
+		FFA4B5E51AF8E95200C50DAB /* GNInstallment.m in Sources */ = {isa = PBXBuildFile; fileRef = FFA4B5E41AF8E95200C50DAB /* GNInstallment.m */; };
+		FFA4B5E81AF8EB6000C50DAB /* GNPaymentToken.m in Sources */ = {isa = PBXBuildFile; fileRef = FFA4B5E71AF8EB6000C50DAB /* GNPaymentToken.m */; };
+		FFA4B5EB1AF8EC6000C50DAB /* GNMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = FFA4B5EA1AF8EC6000C50DAB /* GNMethod.m */; };
+		FFA4B5EE1AF8ED8000C50DAB /* GNError.m in Sources */ = {isa = PBXBuildFile; fileRef = FFA4B5ED1AF8ED8000C50DAB /* GNError.m */; };
+		FFA4B5FA1AF8F33F00C50DAB /* GNCreditCard.m in Sources */ = {isa = PBXBuildFile; fileRef = FFA4B5F91AF8F33F00C50DAB /* GNCreditCard.m */; };
+		FFA4B5FE1AF8F53600C50DAB /* GNConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = FFA4B5FD1AF8F53600C50DAB /* GNConfig.m */; };
+		FFA4B6071AF8FB4400C50DAB /* GNApiClient.m in Sources */ = {isa = PBXBuildFile; fileRef = FFA4B6061AF8FB4400C50DAB /* GNApiClient.m */; };
+		FFA4B60D1AF9137E00C50DAB /* GNApiEndpoints.m in Sources */ = {isa = PBXBuildFile; fileRef = FFA4B60C1AF9137E00C50DAB /* GNApiEndpoints.m */; };
+		FFA7BB601B416ECF00A1FA5C /* Tests.pch in Resources */ = {isa = PBXBuildFile; fileRef = FFADC3081B3D6BFF00F17C47 /* Tests.pch */; };
+		FFA7BB651B4172AC00A1FA5C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFA7BB631B41726300A1FA5C /* Foundation.framework */; };
+		FFADC30A1B3D6CCF00F17C47 /* GNMethodTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFADC3091B3D6CCF00F17C47 /* GNMethodTests.m */; };
+		FFADC30C1B3D6FC000F17C47 /* GNErrorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFADC30B1B3D6FC000F17C47 /* GNErrorTests.m */; };
+		FFADC30E1B3D7B0400F17C47 /* GNCreditCardTest.m in Sources */ = {isa = PBXBuildFile; fileRef = FFADC30D1B3D7B0400F17C47 /* GNCreditCardTest.m */; };
+		FFADC3101B3D7D6B00F17C47 /* GNInstallmentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFADC30F1B3D7D6B00F17C47 /* GNInstallmentTests.m */; };
+		FFADC3121B3D7FB500F17C47 /* GNPaymentTokenTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFADC3111B3D7FB500F17C47 /* GNPaymentTokenTests.m */; };
+		FFADC3141B3D81BC00F17C47 /* GNPaymentDataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFADC3131B3D81BC00F17C47 /* GNPaymentDataTests.m */; };
+		FFADC3181B3D8E9F00F17C47 /* GNConfigTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFADC3171B3D8E9F00F17C47 /* GNConfigTests.m */; };
+		FFADC31A1B3D8FC800F17C47 /* GNApiClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFADC3191B3D8FC800F17C47 /* GNApiClientTests.m */; };
+		FFB7FFE71B3C1B2F0057957C /* .xctool-args in Resources */ = {isa = PBXBuildFile; fileRef = FFB7FFE61B3C1B2F0057957C /* .xctool-args */; };
+		FFB7FFE91B3C1C560057957C /* coveralls.sh in Resources */ = {isa = PBXBuildFile; fileRef = FFB7FFE81B3C1C560057957C /* coveralls.sh */; };
+		FFED92E91B388D44007B5CC5 /* GNApi-Sdk-iOS.podspec in Resources */ = {isa = PBXBuildFile; fileRef = FFED92E51B388D44007B5CC5 /* GNApi-Sdk-iOS.podspec */; };
+		FFED92EA1B388D44007B5CC5 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = FFED92E61B388D44007B5CC5 /* LICENSE */; };
+		FFED92EB1B388D44007B5CC5 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = FFED92E71B388D44007B5CC5 /* Podfile */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FF7A6F651B3B27B7009743D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF62F4761AF8DA540060DF03 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF62F47D1AF8DA540060DF03;
+			remoteInfo = GNApiSdk;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		37D1D449BBAEFAF7C2E8822E /* Pods-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.release.xcconfig"; sourceTree = "<group>"; };
+		5C59FE9B22783C1CA1F8A137 /* libPods-GNApiSdk.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GNApiSdk.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9264654FDF8F10EB1B4E5563 /* Pods-GNApiSdk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GNApiSdk.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GNApiSdk/Pods-GNApiSdk.debug.xcconfig"; sourceTree = "<group>"; };
+		96FF839B7D3FE6731B6DB08C /* libPods-Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D46718E3172DB1E23588F59 /* Pods-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		D131B6D8DB6BC5392AB75770 /* Pods-GNApiSdk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GNApiSdk.release.xcconfig"; path = "Pods/Target Support Files/Pods-GNApiSdk/Pods-GNApiSdk.release.xcconfig"; sourceTree = "<group>"; };
+		FF1269831BCFC1E600A2CB02 /* RSA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSA.h; sourceTree = "<group>"; };
+		FF1269841BCFC1E600A2CB02 /* RSA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSA.m; sourceTree = "<group>"; };
+		FF1D2D521AFBAE5400BBD16D /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		FF56FB7A1B3DE5C0000BB76D /* GNApiEndpointsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNApiEndpointsTests.m; sourceTree = "<group>"; };
+		FF62F47E1AF8DA540060DF03 /* GNApiSdk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GNApiSdk.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF62F4BB1AF8DAB00060DF03 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FF62F4BC1AF8DAB00060DF03 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FF62F4BE1AF8DAB00060DF03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		FF62F4C01AF8DAB00060DF03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FF62F4C11AF8DAB00060DF03 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FF62F4C21AF8DAB00060DF03 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF62F4C31AF8DAB00060DF03 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FF62F4C41AF8DAB00060DF03 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FF62F4C51AF8DAB00060DF03 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FF62F4D11AF8DBCF0060DF03 /* GNApiSdk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNApiSdk.h; sourceTree = "<group>"; };
+		FF727A5E1B0E0D6300FAE890 /* GNPaymentData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNPaymentData.h; sourceTree = "<group>"; };
+		FF727A5F1B0E0D6300FAE890 /* GNPaymentData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNPaymentData.m; sourceTree = "<group>"; };
+		FF7A6F5F1B3B27B7009743D9 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF7A6F621B3B27B7009743D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF7A6F6D1B3B2C7E009743D9 /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
+		FFA4B5E31AF8E95200C50DAB /* GNInstallment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNInstallment.h; sourceTree = "<group>"; };
+		FFA4B5E41AF8E95200C50DAB /* GNInstallment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNInstallment.m; sourceTree = "<group>"; };
+		FFA4B5E61AF8EB6000C50DAB /* GNPaymentToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNPaymentToken.h; sourceTree = "<group>"; };
+		FFA4B5E71AF8EB6000C50DAB /* GNPaymentToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNPaymentToken.m; sourceTree = "<group>"; };
+		FFA4B5E91AF8EC6000C50DAB /* GNMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNMethod.h; sourceTree = "<group>"; };
+		FFA4B5EA1AF8EC6000C50DAB /* GNMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNMethod.m; sourceTree = "<group>"; };
+		FFA4B5EC1AF8ED8000C50DAB /* GNError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNError.h; sourceTree = "<group>"; };
+		FFA4B5ED1AF8ED8000C50DAB /* GNError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNError.m; sourceTree = "<group>"; };
+		FFA4B5F81AF8F33F00C50DAB /* GNCreditCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNCreditCard.h; sourceTree = "<group>"; };
+		FFA4B5F91AF8F33F00C50DAB /* GNCreditCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNCreditCard.m; sourceTree = "<group>"; };
+		FFA4B5FC1AF8F53600C50DAB /* GNConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNConfig.h; sourceTree = "<group>"; };
+		FFA4B5FD1AF8F53600C50DAB /* GNConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNConfig.m; sourceTree = "<group>"; };
+		FFA4B6051AF8FB4400C50DAB /* GNApiClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNApiClient.h; sourceTree = "<group>"; };
+		FFA4B6061AF8FB4400C50DAB /* GNApiClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNApiClient.m; sourceTree = "<group>"; };
+		FFA4B60B1AF9137E00C50DAB /* GNApiEndpoints.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNApiEndpoints.h; sourceTree = "<group>"; };
+		FFA4B60C1AF9137E00C50DAB /* GNApiEndpoints.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNApiEndpoints.m; sourceTree = "<group>"; };
+		FFA7BB631B41726300A1FA5C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FFADC3081B3D6BFF00F17C47 /* Tests.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tests.pch; sourceTree = "<group>"; };
+		FFADC3091B3D6CCF00F17C47 /* GNMethodTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNMethodTests.m; sourceTree = "<group>"; };
+		FFADC30B1B3D6FC000F17C47 /* GNErrorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNErrorTests.m; sourceTree = "<group>"; };
+		FFADC30D1B3D7B0400F17C47 /* GNCreditCardTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNCreditCardTest.m; sourceTree = "<group>"; };
+		FFADC30F1B3D7D6B00F17C47 /* GNInstallmentTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNInstallmentTests.m; sourceTree = "<group>"; };
+		FFADC3111B3D7FB500F17C47 /* GNPaymentTokenTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNPaymentTokenTests.m; sourceTree = "<group>"; };
+		FFADC3131B3D81BC00F17C47 /* GNPaymentDataTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNPaymentDataTests.m; sourceTree = "<group>"; };
+		FFADC3171B3D8E9F00F17C47 /* GNConfigTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNConfigTests.m; sourceTree = "<group>"; };
+		FFADC3191B3D8FC800F17C47 /* GNApiClientTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNApiClientTests.m; sourceTree = "<group>"; };
+		FFB7FFE61B3C1B2F0057957C /* .xctool-args */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ".xctool-args"; sourceTree = "<group>"; };
+		FFB7FFE81B3C1C560057957C /* coveralls.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = coveralls.sh; sourceTree = "<group>"; };
+		FFED92E51B388D44007B5CC5 /* GNApi-Sdk-iOS.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "GNApi-Sdk-iOS.podspec"; sourceTree = "<group>"; };
+		FFED92E61B388D44007B5CC5 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		FFED92E71B388D44007B5CC5 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		FFED92E81B388D44007B5CC5 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF62F47B1AF8DA540060DF03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF1D2D531AFBAE5400BBD16D /* libicucore.dylib in Frameworks */,
+				2A9D2CC45518E2CD452D1DDD /* libPods-GNApiSdk.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF7A6F5C1B3B27B7009743D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFA7BB651B4172AC00A1FA5C /* Foundation.framework in Frameworks */,
+				8D952F32FC0C123011830D80 /* libPods-Tests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3EF397A9958AE78D2D85B86D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FFA7BB631B41726300A1FA5C /* Foundation.framework */,
+				FF1D2D521AFBAE5400BBD16D /* libicucore.dylib */,
+				5C59FE9B22783C1CA1F8A137 /* libPods-GNApiSdk.a */,
+				96FF839B7D3FE6731B6DB08C /* libPods-Tests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7E6966936A70EFDCB999420C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9264654FDF8F10EB1B4E5563 /* Pods-GNApiSdk.debug.xcconfig */,
+				D131B6D8DB6BC5392AB75770 /* Pods-GNApiSdk.release.xcconfig */,
+				9D46718E3172DB1E23588F59 /* Pods-Tests.debug.xcconfig */,
+				37D1D449BBAEFAF7C2E8822E /* Pods-Tests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FF1269821BCFC1A900A2CB02 /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				FF1269831BCFC1E600A2CB02 /* RSA.h */,
+				FF1269841BCFC1E600A2CB02 /* RSA.m */,
+			);
+			name = Libs;
+			sourceTree = "<group>";
+		};
+		FF62F4751AF8DA540060DF03 = {
+			isa = PBXGroup;
+			children = (
+				FF62F4CD1AF8DBA10060DF03 /* GNApiSdk */,
+				FFED92E41B388D27007B5CC5 /* Metadata */,
+				FF62F4BA1AF8DAB00060DF03 /* Example */,
+				FF7A6F601B3B27B7009743D9 /* Tests */,
+				FF62F47F1AF8DA540060DF03 /* Products */,
+				7E6966936A70EFDCB999420C /* Pods */,
+				3EF397A9958AE78D2D85B86D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FF62F47F1AF8DA540060DF03 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF62F47E1AF8DA540060DF03 /* GNApiSdk.app */,
+				FF7A6F5F1B3B27B7009743D9 /* Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF62F4BA1AF8DAB00060DF03 /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				FF62F4BB1AF8DAB00060DF03 /* AppDelegate.h */,
+				FF62F4BC1AF8DAB00060DF03 /* AppDelegate.m */,
+				FF62F4BD1AF8DAB00060DF03 /* LaunchScreen.xib */,
+				FF62F4BF1AF8DAB00060DF03 /* Main.storyboard */,
+				FF62F4C11AF8DAB00060DF03 /* Images.xcassets */,
+				FF62F4C21AF8DAB00060DF03 /* Info.plist */,
+				FF62F4C31AF8DAB00060DF03 /* main.m */,
+				FF62F4C41AF8DAB00060DF03 /* ViewController.h */,
+				FF62F4C51AF8DAB00060DF03 /* ViewController.m */,
+			);
+			path = Example;
+			sourceTree = "<group>";
+		};
+		FF62F4CD1AF8DBA10060DF03 /* GNApiSdk */ = {
+			isa = PBXGroup;
+			children = (
+				FF62F4D11AF8DBCF0060DF03 /* GNApiSdk.h */,
+				FFA4B5FB1AF8F52000C50DAB /* Endpoints */,
+				FFA4B5DF1AF8DF8700C50DAB /* Models */,
+				FF1269821BCFC1A900A2CB02 /* Libs */,
+			);
+			path = GNApiSdk;
+			sourceTree = "<group>";
+		};
+		FF7A6F601B3B27B7009743D9 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				FFADC3151B3D8E6B00F17C47 /* Endpoints */,
+				FFADC3051B3D6A7B00F17C47 /* Models */,
+				FF7A6F611B3B27B7009743D9 /* Supporting Files */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		FF7A6F611B3B27B7009743D9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FF7A6F621B3B27B7009743D9 /* Info.plist */,
+				FFADC3081B3D6BFF00F17C47 /* Tests.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FFA4B5DF1AF8DF8700C50DAB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FF727A5E1B0E0D6300FAE890 /* GNPaymentData.h */,
+				FF727A5F1B0E0D6300FAE890 /* GNPaymentData.m */,
+				FFA4B5E31AF8E95200C50DAB /* GNInstallment.h */,
+				FFA4B5E41AF8E95200C50DAB /* GNInstallment.m */,
+				FFA4B5E61AF8EB6000C50DAB /* GNPaymentToken.h */,
+				FFA4B5E71AF8EB6000C50DAB /* GNPaymentToken.m */,
+				FFA4B5E91AF8EC6000C50DAB /* GNMethod.h */,
+				FFA4B5EA1AF8EC6000C50DAB /* GNMethod.m */,
+				FFA4B5EC1AF8ED8000C50DAB /* GNError.h */,
+				FFA4B5ED1AF8ED8000C50DAB /* GNError.m */,
+				FFA4B5F81AF8F33F00C50DAB /* GNCreditCard.h */,
+				FFA4B5F91AF8F33F00C50DAB /* GNCreditCard.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		FFA4B5FB1AF8F52000C50DAB /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+				FFA4B5FC1AF8F53600C50DAB /* GNConfig.h */,
+				FFA4B5FD1AF8F53600C50DAB /* GNConfig.m */,
+				FFA4B60B1AF9137E00C50DAB /* GNApiEndpoints.h */,
+				FFA4B60C1AF9137E00C50DAB /* GNApiEndpoints.m */,
+				FFA4B6051AF8FB4400C50DAB /* GNApiClient.h */,
+				FFA4B6061AF8FB4400C50DAB /* GNApiClient.m */,
+			);
+			name = Endpoints;
+			sourceTree = "<group>";
+		};
+		FFADC3051B3D6A7B00F17C47 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FFADC3091B3D6CCF00F17C47 /* GNMethodTests.m */,
+				FFADC30B1B3D6FC000F17C47 /* GNErrorTests.m */,
+				FFADC30D1B3D7B0400F17C47 /* GNCreditCardTest.m */,
+				FFADC30F1B3D7D6B00F17C47 /* GNInstallmentTests.m */,
+				FFADC3111B3D7FB500F17C47 /* GNPaymentTokenTests.m */,
+				FFADC3131B3D81BC00F17C47 /* GNPaymentDataTests.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		FFADC3151B3D8E6B00F17C47 /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+				FFADC3171B3D8E9F00F17C47 /* GNConfigTests.m */,
+				FFADC3191B3D8FC800F17C47 /* GNApiClientTests.m */,
+				FF56FB7A1B3DE5C0000BB76D /* GNApiEndpointsTests.m */,
+			);
+			name = Endpoints;
+			sourceTree = "<group>";
+		};
+		FFED92E41B388D27007B5CC5 /* Metadata */ = {
+			isa = PBXGroup;
+			children = (
+				FFED92E51B388D44007B5CC5 /* GNApi-Sdk-iOS.podspec */,
+				FFED92E61B388D44007B5CC5 /* LICENSE */,
+				FFED92E71B388D44007B5CC5 /* Podfile */,
+				FFED92E81B388D44007B5CC5 /* README.md */,
+				FF7A6F6D1B3B2C7E009743D9 /* .travis.yml */,
+				FFB7FFE61B3C1B2F0057957C /* .xctool-args */,
+				FFB7FFE81B3C1C560057957C /* coveralls.sh */,
+			);
+			name = Metadata;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FF62F47D1AF8DA540060DF03 /* GNApiSdk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF62F4A11AF8DA540060DF03 /* Build configuration list for PBXNativeTarget "GNApiSdk" */;
+			buildPhases = (
+				02DF178D307E8153C8880EC0 /* Check Pods Manifest.lock */,
+				FF62F47A1AF8DA540060DF03 /* Sources */,
+				FF62F47B1AF8DA540060DF03 /* Frameworks */,
+				FF62F47C1AF8DA540060DF03 /* Resources */,
+				D3D9EA106F269025130BD68F /* Copy Pods Resources */,
+				E7206D483D164F6FC4F2602C /* Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GNApiSdk;
+			productName = GNApiSdk;
+			productReference = FF62F47E1AF8DA540060DF03 /* GNApiSdk.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FF7A6F5E1B3B27B7009743D9 /* Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF7A6F691B3B27B7009743D9 /* Build configuration list for PBXNativeTarget "Tests" */;
+			buildPhases = (
+				CBAD682619473418B320211E /* Check Pods Manifest.lock */,
+				FF7A6F5B1B3B27B7009743D9 /* Sources */,
+				FF7A6F5C1B3B27B7009743D9 /* Frameworks */,
+				FF7A6F5D1B3B27B7009743D9 /* Resources */,
+				C291DE2BCFF22C07B91DCFA1 /* Copy Pods Resources */,
+				3362EA1C6EED340834E254C9 /* Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF7A6F661B3B27B7009743D9 /* PBXTargetDependency */,
+			);
+			name = Tests;
+			productName = Tests;
+			productReference = FF7A6F5F1B3B27B7009743D9 /* Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF62F4761AF8DA540060DF03 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = Gerencianet;
+				TargetAttributes = {
+					FF62F47D1AF8DA540060DF03 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					FF7A6F5E1B3B27B7009743D9 = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = FF62F47D1AF8DA540060DF03;
+					};
+				};
+			};
+			buildConfigurationList = FF62F4791AF8DA540060DF03 /* Build configuration list for PBXProject "GNApiSdk" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FF62F4751AF8DA540060DF03;
+			productRefGroup = FF62F47F1AF8DA540060DF03 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF62F47D1AF8DA540060DF03 /* GNApiSdk */,
+				FF7A6F5E1B3B27B7009743D9 /* Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF62F47C1AF8DA540060DF03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFB7FFE91B3C1C560057957C /* coveralls.sh in Resources */,
+				FFED92EA1B388D44007B5CC5 /* LICENSE in Resources */,
+				FFB7FFE71B3C1B2F0057957C /* .xctool-args in Resources */,
+				FF62F4C91AF8DAB00060DF03 /* Images.xcassets in Resources */,
+				FF62F4C71AF8DAB00060DF03 /* LaunchScreen.xib in Resources */,
+				FF62F4C81AF8DAB00060DF03 /* Main.storyboard in Resources */,
+				FFED92EB1B388D44007B5CC5 /* Podfile in Resources */,
+				FFED92E91B388D44007B5CC5 /* GNApi-Sdk-iOS.podspec in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF7A6F5D1B3B27B7009743D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFA7BB601B416ECF00A1FA5C /* Tests.pch in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		02DF178D307E8153C8880EC0 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3362EA1C6EED340834E254C9 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tests/Pods-Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C291DE2BCFF22C07B91DCFA1 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tests/Pods-Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CBAD682619473418B320211E /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D3D9EA106F269025130BD68F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GNApiSdk/Pods-GNApiSdk-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E7206D483D164F6FC4F2602C /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GNApiSdk/Pods-GNApiSdk-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF62F47A1AF8DA540060DF03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF62F4CC1AF8DAB00060DF03 /* ViewController.m in Sources */,
+				FFA4B6071AF8FB4400C50DAB /* GNApiClient.m in Sources */,
+				FFA4B5EB1AF8EC6000C50DAB /* GNMethod.m in Sources */,
+				FFA4B5FE1AF8F53600C50DAB /* GNConfig.m in Sources */,
+				FF727A601B0E0D6300FAE890 /* GNPaymentData.m in Sources */,
+				FF62F4CB1AF8DAB00060DF03 /* main.m in Sources */,
+				FFA4B5E51AF8E95200C50DAB /* GNInstallment.m in Sources */,
+				FFA4B5FA1AF8F33F00C50DAB /* GNCreditCard.m in Sources */,
+				FF1269851BCFC1E600A2CB02 /* RSA.m in Sources */,
+				FF62F4C61AF8DAB00060DF03 /* AppDelegate.m in Sources */,
+				FFA4B5E81AF8EB6000C50DAB /* GNPaymentToken.m in Sources */,
+				FFA4B60D1AF9137E00C50DAB /* GNApiEndpoints.m in Sources */,
+				FFA4B5EE1AF8ED8000C50DAB /* GNError.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF7A6F5B1B3B27B7009743D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFADC3141B3D81BC00F17C47 /* GNPaymentDataTests.m in Sources */,
+				FFADC30C1B3D6FC000F17C47 /* GNErrorTests.m in Sources */,
+				FF56FB7B1B3DE5C0000BB76D /* GNApiEndpointsTests.m in Sources */,
+				FFADC3101B3D7D6B00F17C47 /* GNInstallmentTests.m in Sources */,
+				FFADC31A1B3D8FC800F17C47 /* GNApiClientTests.m in Sources */,
+				FFADC30E1B3D7B0400F17C47 /* GNCreditCardTest.m in Sources */,
+				FFADC3181B3D8E9F00F17C47 /* GNConfigTests.m in Sources */,
+				FFADC30A1B3D6CCF00F17C47 /* GNMethodTests.m in Sources */,
+				FFADC3121B3D7FB500F17C47 /* GNPaymentTokenTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FF7A6F661B3B27B7009743D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF62F47D1AF8DA540060DF03 /* GNApiSdk */;
+			targetProxy = FF7A6F651B3B27B7009743D9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FF62F4BD1AF8DAB00060DF03 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF62F4BE1AF8DAB00060DF03 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		FF62F4BF1AF8DAB00060DF03 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF62F4C01AF8DAB00060DF03 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FF62F49F1AF8DA540060DF03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FF62F4A01AF8DA540060DF03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FF62F4A21AF8DA540060DF03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9264654FDF8F10EB1B4E5563 /* Pods-GNApiSdk.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/Example/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FF62F4A31AF8DA540060DF03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D131B6D8DB6BC5392AB75770 /* Pods-GNApiSdk.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/Example/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FF7A6F671B3B27B7009743D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D46718E3172DB1E23588F59 /* Pods-Tests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_GENERATE_TEST_COVERAGE_FILES = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = Tests/Tests.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GNApiSdk.app/GNApiSdk";
+			};
+			name = Debug;
+		};
+		FF7A6F681B3B27B7009743D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37D1D449BBAEFAF7C2E8822E /* Pods-Tests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_GENERATE_TEST_COVERAGE_FILES = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = Tests/Tests.pch;
+				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GNApiSdk.app/GNApiSdk";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF62F4791AF8DA540060DF03 /* Build configuration list for PBXProject "GNApiSdk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF62F49F1AF8DA540060DF03 /* Debug */,
+				FF62F4A01AF8DA540060DF03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF62F4A11AF8DA540060DF03 /* Build configuration list for PBXNativeTarget "GNApiSdk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF62F4A21AF8DA540060DF03 /* Debug */,
+				FF62F4A31AF8DA540060DF03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF7A6F691B3B27B7009743D9 /* Build configuration list for PBXNativeTarget "Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF7A6F671B3B27B7009743D9 /* Debug */,
+				FF7A6F681B3B27B7009743D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FF62F4761AF8DA540060DF03 /* Project object */;
+}

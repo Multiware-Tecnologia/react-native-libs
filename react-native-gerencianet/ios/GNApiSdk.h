@@ -3,3 +3,4 @@
 @interface Gerencianet : NSObject <RCTBridgeModule>
 
 @end
+@class RNGNT;
