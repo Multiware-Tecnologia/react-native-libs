@@ -8,6 +8,7 @@ A module to integrate gerencianet api sdk for android
 run npm install react-native-libs
 ```
 
+## Android configs
 
 ```sh
 Add this line to your settings.gradle file 
