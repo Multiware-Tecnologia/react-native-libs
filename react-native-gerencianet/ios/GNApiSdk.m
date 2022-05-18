@@ -4,7 +4,7 @@
 #import "GNPaymentToken.h"
 #import "GNConfig.h"
 #import "GNError.h"
-#import "GNEndpoints.h"
+#import "GNApiEndpoints.h"
 
 @implementation RNGNT
 
