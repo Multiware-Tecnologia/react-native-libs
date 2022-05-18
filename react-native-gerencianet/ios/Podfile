@@ -1,7 +1,7 @@
 xcodeproj 'GNApiSdk.xcodeproj'
 platform :ios, '7.0'
 
-target 'GNApiSdk' do
+target 'RNGerencianet' do
     pod "AFNetworking", "2.5.4"
     pod "RegexKitLite"
     pod "PromiseKit", "~> 1.5"

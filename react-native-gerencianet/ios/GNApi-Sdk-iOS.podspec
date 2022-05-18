@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-    s.name         = "GNApi-Sdk-iOS"
+    s.name         = "RNGerencianet"
     s.version      = "0.3.0"
     s.summary      = "A simple lib for easy integration of your mobile app with the payment services provided by Gerencianet."
     s.homepage     = "https://github.com/gerencianet/gn-api-sdk-ios"
