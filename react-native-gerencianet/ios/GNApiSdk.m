@@ -1,5 +1,10 @@
 #import "GNApiSdk.h"
 #import "RCTLog.h"
+#import "GNCreditCard.h"
+#import "GNPaymentToken.h"
+#import "GNConfig.h"
+#import "GNError.h"
+#import "GNEndpoints.h"
 
 @implementation RNGNT
 
@@ -23,18 +28,13 @@ RCT_EXPORT_MODULE()
     [gnApi paymentTokenForCreditCard:creditCard]
     .then(^(GNPaymentToken *paymentToken){
     NSLog(@"%@", paymentToken.token);
+    NSString *events =[rn generateHashWithCardNumber:number cardBrand:brand securityCode:ccv expirationMonth:expirationMonth expirationYear:expirationYear ]
+    callback(@[[NSNull null], events]);
     })
     .catch(^(GNError *error){
     NSLog(@"An error occurred: %@", error.message);
+    callback(@[[NSNull null], error.message]);
     });
-}
-
-
-
-
-  NSNumber *result = @([a floatValue] * [b floatValue]);
-
-  resolve(result);
 }
 
 @end

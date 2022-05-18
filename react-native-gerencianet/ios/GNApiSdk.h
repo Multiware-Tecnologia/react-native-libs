@@ -1,6 +1,6 @@
 #import <React/RCTBridgeModule.h>
 
-@interface Gerencianet : NSObject <RCTBridgeModule>
+@interface GNApiSdk : NSObject <RCTBridgeModule>
 
 @end
 @class RNGNT;
