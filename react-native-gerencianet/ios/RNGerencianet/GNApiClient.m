@@ -26,14 +26,14 @@ NSString *const kGNApiBaseUrlSandbox = @"https://sandbox.gerencianet.com.br/v1";
     }
     
     NSString *url = [NSString stringWithFormat:@"%@%@", (_config.sandbox ? kGNApiBaseUrlSandbox : kGNApiBaseUrlProduction), route];
-    AFHTTPRequestOperationManager *httpManager = [AFHTTPRequestOperationManager manager];
-    [httpManager.requestSerializer setValue:_config.accountCode forHTTPHeaderField:@"account-code"];
+    AFHTTPSessionManager *Manager = [AFHTTPSessionManager manager];
+    [Manager.requestSerializer setValue:_config.accountCode forHTTPHeaderField:@"account-code"];
     
     return [PMKPromise new:^(PMKFulfiller fulfill, PMKRejecter reject) {
         
-        id successBlock = ^(AFHTTPRequestOperation *operation, id responseObject) {
+        id successBlock = ^(AFHTTPSessionManager *operation, id responseObject) {
             NSError *err = nil;
-            NSDictionary *responseDict = [NSJSONSerialization JSONObjectWithData:operation.responseData options:NSJSONReadingMutableContainers error:&err];
+            NSDictionary *responseDict = [NSJSONSerialization JSONObjectWithData:operation options:NSJSONReadingMutableContainers error:&err];
             GNError *gnApiErr = nil;
             if(err){
                 gnApiErr = [[GNError alloc] initWithCode:500 message:@"Invalid response data."];
@@ -48,12 +48,12 @@ NSString *const kGNApiBaseUrlSandbox = @"https://sandbox.gerencianet.com.br/v1";
             }
         };
         
-        id failureBlock = ^(AFHTTPRequestOperation *operation, NSError *error) {
+        id failureBlock = ^(NSURLSessionTask *operation, NSError *error) {
             NSError *err;
             NSDictionary *responseDict;
             GNError *gnApiErr;
-            if(operation.responseData){
-                responseDict = [NSJSONSerialization JSONObjectWithData:operation.responseData options:NSJSONReadingMutableContainers error:&err];
+            if(operation.response){
+                responseDict = [NSJSONSerialization JSONObjectWithData:operation.response options:NSJSONReadingMutableContainers error:&err];
             }
             if(!err && responseDict){
                 gnApiErr = [[GNError alloc] initWithDictionary:responseDict];
@@ -66,9 +66,9 @@ NSString *const kGNApiBaseUrlSandbox = @"https://sandbox.gerencianet.com.br/v1";
         
         
         if ([method isEqualToString:@"POST"]) {
-            [httpManager POST:url parameters:params success:successBlock failure:failureBlock];
+            [[AFJSONRequestSerializer serializer] requestWithMethod:@"POST" URLString:url parameters:params error:nil];
         } else if ([method isEqualToString:@"GET"]) {
-            [httpManager GET:url parameters:params success:successBlock failure:failureBlock];
+            [[AFHTTPRequestSerializer serializer] requestWithMethod:@"GET" URLString:url parameters:params error:nil];
         }
     }];
 }
