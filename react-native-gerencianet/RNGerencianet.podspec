@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
     s.source_files = "RNGerencianet", "RNGerencianet/*.{h,m}"
     s.requires_arc = true
     s.platform     = :ios, "7.0"
-    s.dependency "AFNetworking", "2.5.4"
+    s.dependency "AFNetworking", "~> 4.0"
     s.dependency "PromiseKit", "~> 1.5"
     s.dependency "RegexKitLite"
 end
